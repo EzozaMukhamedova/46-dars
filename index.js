@@ -77,19 +77,23 @@ function asosiySahifa() {
 
   switch (list) {
     case 1: {
-      let str = "";
+      let str = "Nomi   |   Narxi   |   Kategoriyasi   |   Omborda\n";
+      str +=
+        "-----------------------------------------------------------------\n";
       for (let item of products) {
         str +=
           item.name +
-          " " +
+          "  |  " +
           item.price +
-          " " +
+          "  |  " +
           item.category +
-          " " +
+          "  |  " +
           item.stock +
           " " +
           "\n";
       }
+      str +=
+        "-----------------------------------------------------------------\n";
       alert(str);
       asosiySahifa();
       break;
